@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="export_geozone"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{5612DDD9-BD82-473F-AA36-1C41B64EB158}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{CEAA9666-8A6D-4101-8C7B-B1AB8F32AB26}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -166,13 +166,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\export data from SQL to flat_file"
+      DTS:refId="Package\export data from SQL server to flat_file"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{9EBBE178-7A5A-463A-A5FB-E68FA4E3D8EE}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="export data from SQL to flat_file"
+      DTS:ObjectName="export data from SQL server to flat_file"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -180,7 +180,7 @@
           version="1">
           <components>
             <component
-              refId="Package\export data from SQL to flat_file\Flat File Destination"
+              refId="Package\export data from SQL server to flat_file\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Flat File Destination"
@@ -199,150 +199,150 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\export data from SQL to flat_file\Flat File Destination.Connections[FlatFileConnection]"
+                  refId="Package\export data from SQL server to flat_file\Flat File Destination.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[conn_flatfile_geozone]"
                   connectionManagerRefId="Package.ConnectionManagers[conn_flatfile_geozone]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input]"
+                  refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[PQSIDNK]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[PQSIDNK]"
                       cachedDataType="i8"
                       cachedName="PQSIDNK"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PQSIDNK]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PQSIDNK]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditInsertDate]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditInsertDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="AuditInsertDate"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditInsertDate]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditInsertDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditUpdateDate]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditUpdateDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="AuditUpdateDate"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditUpdateDate]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditUpdateDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditIsDeleted]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[AuditIsDeleted]"
                       cachedDataType="bool"
                       cachedName="AuditIsDeleted"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditIsDeleted]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditIsDeleted]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[HistoricalHashKey]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[HistoricalHashKey]"
                       cachedDataType="bytes"
                       cachedLength="20"
                       cachedName="HistoricalHashKey"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HistoricalHashKey]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HistoricalHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[ChangeHashKey]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[ChangeHashKey]"
                       cachedDataType="bytes"
                       cachedLength="20"
                       cachedName="ChangeHashKey"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ChangeHashKey]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ChangeHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[GeoZoneCode]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[GeoZoneCode]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="GeoZoneCode"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneCode]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneCode]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[GeoZoneName]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[GeoZoneName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="GeoZoneName"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneName]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneName]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductQualityRepResponsible]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductQualityRepResponsible]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="513"
                       cachedName="ProductQualityRepResponsible"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductQualityRepResponsible]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductQualityRepResponsible]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[SalesArea]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[SalesArea]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="SalesArea"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesArea]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesArea]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]" />
                     <inputColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[SalesRegion]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].Columns[SalesRegion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="SalesRegion"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesRegion]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]" />
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesRegion]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PQSIDNK]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PQSIDNK]"
                       dataType="i8"
                       name="PQSIDNK" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditInsertDate]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditInsertDate]"
                       dataType="dbTimeStamp"
                       name="AuditInsertDate" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditUpdateDate]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditUpdateDate]"
                       dataType="dbTimeStamp"
                       name="AuditUpdateDate" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditIsDeleted]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AuditIsDeleted]"
                       dataType="bool"
                       name="AuditIsDeleted" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HistoricalHashKey]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HistoricalHashKey]"
                       dataType="bytes"
                       length="20"
                       name="HistoricalHashKey" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ChangeHashKey]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ChangeHashKey]"
                       dataType="bytes"
                       length="20"
                       name="ChangeHashKey" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneCode]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneCode]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="GeoZoneCode" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneName]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[GeoZoneName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="GeoZoneName" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductQualityRepResponsible]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductQualityRepResponsible]"
                       codePage="1252"
                       dataType="str"
                       length="513"
                       name="ProductQualityRepResponsible" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesArea]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesArea]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="SalesArea" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesRegion]"
+                      refId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SalesRegion]"
                       codePage="1252"
                       dataType="str"
                       length="20"
@@ -352,7 +352,7 @@
               </inputs>
             </component>
             <component
-              refId="Package\export data from SQL to flat_file\OLE DB Source"
+              refId="Package\export data from SQL server to flat_file\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -412,7 +412,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\export data from SQL to flat_file\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\export data from SQL server to flat_file\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[whqv9612.RoofingDM_DEV]"
                   connectionManagerRefId="Package.ConnectionManagers[whqv9612.RoofingDM_DEV]"
                   description="The OLE DB runtime connection used to access the database."
@@ -420,175 +420,175 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PQSIDNK]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PQSIDNK]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[PQSIDNK]"
                       name="PQSIDNK"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditInsertDate]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditInsertDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditInsertDate]"
                       name="AuditInsertDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditUpdateDate]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditUpdateDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditUpdateDate]"
                       name="AuditUpdateDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditIsDeleted]"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditIsDeleted]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[AuditIsDeleted]"
                       name="AuditIsDeleted"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]"
                       dataType="bytes"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HistoricalHashKey]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HistoricalHashKey]"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[HistoricalHashKey]"
                       name="HistoricalHashKey"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]"
                       dataType="bytes"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChangeHashKey]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChangeHashKey]"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChangeHashKey]"
                       name="ChangeHashKey"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneCode]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneCode]"
                       length="10"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneCode]"
                       name="GeoZoneCode"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneName]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneName]"
                       length="50"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[GeoZoneName]"
                       name="GeoZoneName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductQualityRepResponsible]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductQualityRepResponsible]"
                       length="513"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductQualityRepResponsible]"
                       name="ProductQualityRepResponsible"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesArea]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesArea]"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesArea]"
                       name="SalesArea"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesRegion]"
+                      externalMetadataColumnId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesRegion]"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesRegion]"
                       name="SalesRegion"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PQSIDNK]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PQSIDNK]"
                       dataType="i8"
                       name="PQSIDNK" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditInsertDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditInsertDate]"
                       dataType="dbTimeStamp"
                       name="AuditInsertDate" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditUpdateDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditUpdateDate]"
                       dataType="dbTimeStamp"
                       name="AuditUpdateDate" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditIsDeleted]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AuditIsDeleted]"
                       dataType="bool"
                       name="AuditIsDeleted" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HistoricalHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HistoricalHashKey]"
                       dataType="bytes"
                       length="20"
                       name="HistoricalHashKey" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChangeHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChangeHashKey]"
                       dataType="bytes"
                       length="20"
                       name="ChangeHashKey" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneCode]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneCode]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="GeoZoneCode" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneName]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GeoZoneName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="GeoZoneName" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductQualityRepResponsible]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductQualityRepResponsible]"
                       codePage="1252"
                       dataType="str"
                       length="513"
                       name="ProductQualityRepResponsible" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesArea]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesArea]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="SalesArea" />
                     <externalMetadataColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesRegion]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesRegion]"
                       codePage="1252"
                       dataType="str"
                       length="20"
@@ -596,87 +596,87 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneCode]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneCode]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneCode]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneCode]"
                       name="GeoZoneCode" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneName]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneName]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GeoZoneName]"
                       name="GeoZoneName" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PQSIDNK]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PQSIDNK]"
                       dataType="i8"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PQSIDNK]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PQSIDNK]"
                       name="PQSIDNK" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductQualityRepResponsible]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductQualityRepResponsible]"
                       codePage="1252"
                       dataType="str"
                       length="513"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductQualityRepResponsible]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductQualityRepResponsible]"
                       name="ProductQualityRepResponsible" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditInsertDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditInsertDate]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditInsertDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditInsertDate]"
                       name="AuditInsertDate" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditUpdateDate]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditUpdateDate]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditUpdateDate]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditUpdateDate]"
                       name="AuditUpdateDate" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditIsDeleted]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditIsDeleted]"
                       dataType="bool"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditIsDeleted]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AuditIsDeleted]"
                       name="AuditIsDeleted" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesArea]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesArea]"
                       codePage="1252"
                       dataType="str"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesArea]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesArea]"
                       name="SalesArea" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesRegion]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesRegion]"
                       codePage="1252"
                       dataType="str"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesRegion]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SalesRegion]"
                       name="SalesRegion" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HistoricalHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HistoricalHashKey]"
                       dataType="bytes"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HistoricalHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HistoricalHashKey]"
                       name="HistoricalHashKey" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChangeHashKey]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChangeHashKey]"
                       dataType="bytes"
                       length="20"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChangeHashKey]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChangeHashKey]"
                       name="ChangeHashKey" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -687,10 +687,10 @@
           </components>
           <paths>
             <path
-              refId="Package\export data from SQL to flat_file.Paths[OLE DB Source Output]"
-              endId="Package\export data from SQL to flat_file\Flat File Destination.Inputs[Flat File Destination Input]"
+              refId="Package\export data from SQL server to flat_file.Paths[OLE DB Source Output]"
+              endId="Package\export data from SQL server to flat_file\Flat File Destination.Inputs[Flat File Destination Input]"
               name="OLE DB Source Output"
-              startId="Package\export data from SQL to flat_file\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\export data from SQL server to flat_file\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -723,7 +723,7 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{CE5C786C-6AEB-46FB-AD5E-92B696099D1E}"
-      DTS:From="Package\export data from SQL to flat_file"
+      DTS:From="Package\export data from SQL server to flat_file"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Send Mail Task" />
@@ -741,8 +741,8 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="233,42"
-          Id="Package\export data from SQL to flat_file"
+          Size="265,42"
+          Id="Package\export data from SQL server to flat_file"
           TopLeft="212,73" />
         <NodeLayout
           Size="152,42"
@@ -774,20 +774,20 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\export data from SQL to flat_file">
+    design-time-name="Package\export data from SQL server to flat_file">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="174,42"
-          Id="Package\export data from SQL to flat_file\Flat File Destination"
+          Id="Package\export data from SQL server to flat_file\Flat File Destination"
           TopLeft="186,134" />
         <NodeLayout
           Size="152,42"
-          Id="Package\export data from SQL to flat_file\OLE DB Source"
+          Id="Package\export data from SQL server to flat_file\OLE DB Source"
           TopLeft="145,36" />
         <EdgeLayout
-          Id="Package\export data from SQL to flat_file.Paths[OLE DB Source Output]"
+          Id="Package\export data from SQL server to flat_file.Paths[OLE DB Source Output]"
           TopLeft="221,78">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -824,7 +824,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\export data from SQL to flat_file\OLE DB Source">
+    design-time-name="Package\export data from SQL server to flat_file\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
