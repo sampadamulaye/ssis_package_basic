@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="conn_SMTP"
+  DTS:DTSID="{DD9E57A9-E02A-406A-8D07-C8D5A11F2E96}"
+  DTS:Description="Email"
+  DTS:CreationName="SMTP">
+  <DTS:ObjectData>
+    <SmtpConnectionManager
+      ConnectionString="SmtpServer=imc1.owenscorning.com;UseWindowsAuthentication=False;EnableSsl=False;Timeout=20000;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
